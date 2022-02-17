@@ -1,13 +1,22 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  while(array.length > 0){
+    let numberToFind = target - array.pop();
+    if(array.indexOf(numberToFind) !== -1){
+      return true
+    }
+  }
+  return false;
 }
 
 /* 
   Write the Big O time complexity of your function here
+  n^2
 */
 
 /* 
   Add your pseudocode here
+  for each 
 */
 
 /*
